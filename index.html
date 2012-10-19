@@ -1,0 +1,10 @@
+<html>
+  <body>
+    {% for artist, tweets in artistsAndTweets.items %}
+        <p>{{ artist }}</p>
+        {% for tweet in tweets %}
+       		<p>{{ tweet }}</p>
+       	{% endfor %}
+    {% endfor %}
+  </body>
+</html>
